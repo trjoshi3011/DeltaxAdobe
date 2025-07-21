@@ -1,16 +1,15 @@
 ## 🌟 Introduction
-This project focused on .
+This project aims to develop a sentiment analysis model to help Adobe’s Creative Content team assess audience engagement with Adobe Live and Photoshop content across Instagram and Youtube. Using a database with content links, the team will extract comment data from each platform, analyze sentiment, and identify which types of content elicit more positive reactions and engagement. 
 
 ## 👥 The Team and Roles
 
 | Name            | Role            | Major                                     |
 | --------------- | --------------- | ----------------------------------------- |
-| Kinton Duong    | Project Manager | Computer Science                          |
-| Tanay Joshi     | Project Manager | Data Science & Business Administration    |
+| Tanay Joshi   | Project Manager | Data Science & Economics                   |
+| Kelley Liang     | Project Manager | Electrical Engineering & Computer Science    |
 | Raghav Aggarwal | Senior Analyst  | Computer Science                          |
-| Alexa Zhang     | Senior Analyst  | Data Science                              |
+| Radhika Goyal     | Analyst  | Electrical Engineering & Computer Science                              |
 | Nishanth Kairamkonda         | Analyst         | Electrical Engineering & Computer Science                              |
-| Priya Patel     | Analyst         | Electrical Engineering & Computer Science |
 
 ### 🛠 Prerequisites
 Make sure you have the following installed:
