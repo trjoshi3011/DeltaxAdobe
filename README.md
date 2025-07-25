@@ -11,86 +11,55 @@ This project aims to develop a sentiment analysis model to help Adobe’s Creati
 | Radhika Goyal     | Analyst  | Electrical Engineering & Computer Science                              |
 | Nishanth Kairamkonda         | Analyst         | Electrical Engineering & Computer Science                              |
 
-### 🛠 Prerequisites
-Make sure you have the following installed:
-- **VSCode**
-- **Node.js**
-- **npm**
+### 🧑‍💻 Running the Application in Google Colab
+You don’t need to install anything or clone the repository locally. Just follow these steps:
 
- ### ⬇️ Installing
-  Install Node.js and npm 
-   - Ensure Node.js is installed on your local system via [Node.js official website](https://nodejs.org/en).  
-   - Install the required npm dependencies by running the following command in the terminal:
-     
-   ```bash
-     npm install
-   ```
-### Running the Application
 
-Clone the Repository:
+ ### ✅ Prerequisites
+  - A Google account
+  - Internet access
+  - No local setup required — everything runs in the browser via Google Colab
 
-```bash
-git clone https://github.com/trjoshi3011/Delta-x-UN.git
-cd sp25UN
+
+### ▶️ How to Run
+- Click on the Colab link provided
+- Once the Colab notebook opens, click:
+ ```bash
+Runtime → Run all
 ```
-
-Install Dependencies
-
-```bash
-npm install
-```
-
-Run the Development Server:
-
-```bash
-npm start
-```
-
-The app will be running at: 
-```bash
-http://localhost:3000
-```
+- Wait for the code to execute. You may be prompted to grant Colab permissions the first time.
 
 ## 📚 Tech Stack
 
-- **Reacts**: A front-end development framework that allows for reusable components.
-- **JavaScript**: A programming language that allows us to create interactivity through state management and event handling.
-- **CSS**: A language we used to style the website, allowing it to look modern and fit the UN colors.
+- **Python**: A versatile programming language used for data processing and analysis.
+- **Pandas**: A powerful data manipulation library used for cleaning, transforming, and analyzing structured data.
+- **Seaborn**: A statistical data visualization library, used to create informative and attractive charts and graphs.
+- **Hugging Face**: An open-source platform providing access to state-of-the-art machine learning models, particularly for natural language processing (NLP).
+- **OpenAI API**: A cloud-based API that enables interaction with GPT to generate text and analyze content.
 
 ## 🛠️ The Process
 
-### Front-End Process
-**Today at the UN Feature**  
-We used JavaScript to create a horizontal scroll that allows the page to store multiple news stories in a small area:
-- The news is represented by a relevant image.
-- The news article title appears.
-- A scroll bar is present right below to scroll to more stories.
+**Getting the Data**  
+For YouTube, we used the official YouTube API. We passed in a CSV file with links to the YouTube Videos, and the API got us the comments to those videos and other metadata.
+- 214 Photoshop comments
+- 266 Fireflu comments
+
   
-**UN Archive Feature**  
-We used JavaScript to create a timeline of the relevant events of the UN history:
-- The date and event are present in **bold**.
-- Each item in the timeline has an external link for more information if a user is interested in learning more.
-- The icons and links change state if you hover over them, creating interactivity.
+**Processing**  
+We used Pandas dataframes to store, process, and clean the data. This allowed us to delete rows (i.e, a comment) that we wanted to remove for a visualization. For example, for sentiment visualizations, we wanted to avoid using comments that the Hugging Face model was unsure about. So, through using Pandas, we were easily able to do this.
 
-**Read Watch Listen Engage Feature**  
-We used JavaScript to create tabs, so the user can click through Read, Watch, Listen, and Engage:
-- Only information from the tab the user is on appears.
-- Each tab consists of relevant external links that allow the user to go to more sites for more information.
-- The tabs and links change state if you hover over them, creating interactivity.
+**Creating Visualizations**  
+We used Seaborn to create the visualizations. We would take two variables and plot a fitting graph to represent the relationship between the two variables. Once the graph was plotted, we would see if any insights could be extracted.
 
-**External Links Feature**  
-We used JavaScript to create buttons on the following topics: Main Bodies, Departments/Offices, Resources/Services, Key Documents, News and Media, and Issues/Campaigns:
-- When the user hovers over the button, a pop-up appears that shows the user multiple relevant links.
-- Each pop-up is scrollable, so the user can see all the links while still preserving space.
+**Using Hugging Face**  
+We used the "Twitter-roBERTa-base for Sentiment Analysis" model for our initial labeling of the comments for some of the visualizations. 
+- Classifies text as Positive, Neutral, or Negative
+- Trained on ~58M tweets
 
-**UN Photo Feature**  
-We used JavaScript to create buttons that lead users to external sites if they choose to view photos:
-- When the user hovers over the button, it changes color, creating interactivity.
-- Also, a photo appears on the main page, which we are working to make interactive, so the photo changes on its own at a certain time interval.
+**Using GPT**  
+We used the OpenAI API to get access to the GPT-4 4o-mini model. We passed in the transcripts of all the YouTube videos that had transcripts, and asked GPT to determine the method of advertisement. 
 
-**Broadcast Feed and Calendars Feature**  
-We used JavaScript to create components so that each group of information is separated and clear:
-- Each component has links to external sites so the user can view more information if they choose to.
+
 
 ## 🚧 Challenges
 
