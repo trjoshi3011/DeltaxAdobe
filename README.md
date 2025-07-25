@@ -94,11 +94,11 @@ We used JavaScript to create components so that each group of information is sep
 
 ## 🚧 Challenges
 
-The biggest challenge we faced was how to represent all the information that the UN Events and News Page but make it less overwhelming and modern. We did so through creating a variety of mechanisms that revealed more information only if the user chose to find that information. For example, if the user wants to read news, they can scroll to find more news; all the news stories don't have to appear on one page. If a user wants to find key documents, the user can hover over the Key Documents button to see links to key documents. To make the website more modern, we focused on changing states from user actions. For example, if a user hovered over a tab, the tab tile changed color. 
+The two biggest challenges we faced were the lack of engagement data on YouTube and not getting access to Instagram comments. For YouTube, we were dealing with around 400 comments, and over 20% of them came from a single video. With such sparse data, it's hard to make strong conclusions about what's working and what isn't. Many of the visualizations we created were useless because there simply wasn't enough data to discern clear trends. The visualizations we used and which showed some trends, were also not ideal for making definitive strategies. 
 
 ## 📈 Next Steps
 
-Our next steps would consist of two main things. The first is to create React prototypes of the other webpages, such as the Spotlight and Global Issues Pages. Next, we would make our Events and News prototype more production-ready. We would do this by implementing an accurate navigation bar, ensuring the website renders properly for all desktop sizes, and making it possible for information on the website to change more easily. Ex: new news stories or new pictures.
+Our next steps involve creating a sentiment classification model trained specifically on the engagement data from Adobe content. First, we plan to manually label each comment from both Photoshop and Firefly content. Then, we plan to use scikit-learn to create baseline classification models like logistic regression and support vector machines. After that, we will fine-tune a large Hugging Face transformer model with our labeled data and evaluate it. Once we create the classification model, we will deploy it with a nice interface using Streamlit.
 
 
 
