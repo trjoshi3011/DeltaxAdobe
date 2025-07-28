@@ -44,6 +44,9 @@ For YouTube, we used the official YouTube API. We passed in a CSV file with link
 - 214 Photoshop comments
 - 266 Fireflu comments
 
+For Instagram, we used the  Graph API. The API only allows access to comments by reels posted by Adobe, regardless if it was added as a collaborator.
+- 8258 comments in total 
+
   
 **Processing**  
 We used Pandas dataframes to store, process, and clean the data. This allowed us to delete rows (i.e, a comment) that we wanted to remove for a visualization. For example, for sentiment visualizations, we wanted to avoid using comments that the Hugging Face model was unsure about. So, through using Pandas, we were easily able to do this.
