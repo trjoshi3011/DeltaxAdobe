@@ -14,7 +14,9 @@ This project aims to develop a sentiment analysis model to help Adobe’s Creati
 ### Running the Application in Google Colab
 You don’t need to install anything or clone the repository locally. Just follow these steps:
 
-
+### Links to both Google Colabs
+Instagram EDA: https://colab.research.google.com/drive/1QztTKlJC9Ekbjn28CWY_hPZP6-Dd5F0W?usp=sharing
+Youtube EDA: https://colab.research.google.com/drive/1m7tofCR0g0Q5ZgXToVQ1iXWjEbDzShQk?usp=sharing
  ### Prerequisites
   - A Google account
   - Internet access
